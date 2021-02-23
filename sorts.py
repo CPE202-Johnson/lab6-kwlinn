@@ -15,10 +15,10 @@ def selection_sort(list):
 def insertion_sort(list):
     count = 0
     for i in range(1, len(list)):
-        value = list[i]
-        while list[i - 1] > value and i > 0:
-            list[i], list[i - 1] = list[i - 1], list[i]
-            i -= 1
+        j = i
+        while j > 0 and list[j - 1] > list[j]:
+            list[j - 1], list[j]  = list[j], list[j - 1]
+            j -= 1
             count += 1
     return count
 
