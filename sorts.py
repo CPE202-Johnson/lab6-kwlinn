@@ -19,7 +19,7 @@ def insertion_sort(list):
         while j > 0 and list[j - 1] > list[j]:
             list[j - 1], list[j]  = list[j], list[j - 1]
             j -= 1
-            count += 1
+        count += 1
     return count
 
 def main():
